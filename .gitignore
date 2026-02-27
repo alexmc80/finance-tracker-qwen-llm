@@ -10,3 +10,7 @@ logs
 coverage
 *.tsbuildinfo
 bruno/**/node_modules
+.github/workflows/*.local.yml
+backup.log
+backups/
+*.bak
