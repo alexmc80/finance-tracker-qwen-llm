@@ -1,0 +1,21 @@
+meta {
+  name: Create Category
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3001/api/categories
+  body: json
+  auth: inherit
+}
+
+json {
+  {
+    "ownerId": "owner-id-here",
+    "name": "Groceries",
+    "type": -1
+  }
+}
+
+# type: -1 = расход (expense), 1 = доход (income)

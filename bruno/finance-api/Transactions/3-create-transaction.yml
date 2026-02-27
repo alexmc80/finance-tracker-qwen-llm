@@ -1,0 +1,24 @@
+info:
+  name: Create Transaction
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:3001/api/transactions
+  body:
+    type: json
+    data: |-
+      {
+        "ownerId": "owner-id-here",
+        "accountId": "account-id-here",
+        "categoryId": "category-id-here",
+        "amount": 1000.50,
+        "type": -1,
+        "date": "2026-02-26"
+      }
+  auth: inherit
+
+docs: |-
+  type: -1 = расход (expense), 1 = доход (income)
+  date format: YYYY-MM-DD

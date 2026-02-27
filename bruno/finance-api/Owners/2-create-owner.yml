@@ -1,0 +1,15 @@
+info:
+  name: Create Owner
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:3001/api/owners
+  body:
+    type: json
+    data: |-
+      {
+        "name": "John Doe"
+      }
+  auth: inherit

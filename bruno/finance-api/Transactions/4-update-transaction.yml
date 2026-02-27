@@ -1,0 +1,25 @@
+info:
+  name: Update Transaction
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: http://localhost:3001/api/transactions/{{transactionId}}
+  params:
+    - name: transactionId
+      value: transaction-id-here
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "amount": 1500.00,
+        "type": 1,
+        "date": "2026-02-27"
+      }
+  auth: inherit
+
+docs: |-
+  type: -1 = расход (expense), 1 = доход (income)
+  date format: YYYY-MM-DD

@@ -1,0 +1,17 @@
+meta {
+  name: Create Owner
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3001/api/owners
+  body: json
+  auth: inherit
+}
+
+json {
+  {
+    "name": "John Doe"
+  }
+}

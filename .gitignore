@@ -1,0 +1,12 @@
+node_modules
+dist
+data/*.db
+logs
+.env
+.DS_Store
+*.log
+.vscode
+.idea
+coverage
+*.tsbuildinfo
+bruno/**/node_modules

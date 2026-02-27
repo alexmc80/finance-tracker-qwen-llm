@@ -1,0 +1,15 @@
+meta {
+  name: Get Accounts By Owner
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:3001/api/accounts/owner/{{ownerId}}
+  body: none
+  auth: inherit
+}
+
+params {
+  ownerId: owner-id-here
+}

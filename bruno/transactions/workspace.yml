@@ -1,0 +1,12 @@
+opencollection: 1.0.0
+info:
+  name: "transactions"
+  type: workspace
+
+collections:
+  - name: "transaction"
+    path: "..\\finance-api"
+
+specs:
+
+docs: ''

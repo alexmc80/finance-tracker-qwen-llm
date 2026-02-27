@@ -1,0 +1,15 @@
+meta {
+  name: Get Transactions By Owner
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:3001/api/transactions/owner/{{ownerId}}
+  body: none
+  auth: inherit
+}
+
+params {
+  ownerId: owner-id-here
+}

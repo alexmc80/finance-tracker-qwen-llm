@@ -1,0 +1,15 @@
+meta {
+  name: Delete Category
+  type: http
+  seq: 5
+}
+
+delete {
+  url: http://localhost:3001/api/categories/{{categoryId}}
+  body: none
+  auth: inherit
+}
+
+params {
+  categoryId: category-id-here
+}

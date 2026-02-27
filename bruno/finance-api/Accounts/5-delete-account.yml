@@ -1,0 +1,13 @@
+info:
+  name: Delete Account
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: http://localhost:3001/api/accounts/{{accountId}}
+  params:
+    - name: accountId
+      value: account-id-here
+      type: path
+  auth: inherit

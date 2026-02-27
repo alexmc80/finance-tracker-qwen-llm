@@ -1,0 +1,21 @@
+meta {
+  name: Update Owner
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3001/api/owners/{{ownerId}}
+  body: json
+  auth: inherit
+}
+
+params {
+  ownerId: owner-id-here
+}
+
+json {
+  {
+    "name": "Updated Name"
+  }
+}

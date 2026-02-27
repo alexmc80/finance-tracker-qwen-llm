@@ -1,0 +1,23 @@
+info:
+  name: Update Category
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: http://localhost:3001/api/categories/{{categoryId}}
+  params:
+    - name: categoryId
+      value: category-id-here
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Updated Category Name",
+        "type": -1
+      }
+  auth: inherit
+
+docs: |-
+  type: -1 = расход (expense), 1 = доход (income)

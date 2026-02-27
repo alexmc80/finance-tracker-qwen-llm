@@ -1,0 +1,13 @@
+info:
+  name: Get Transactions By Owner
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:3001/api/transactions/owner/{{ownerId}}
+  params:
+    - name: ownerId
+      value: owner-id-here
+      type: path
+  auth: inherit

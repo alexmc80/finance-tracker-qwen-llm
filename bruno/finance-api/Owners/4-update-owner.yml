@@ -1,0 +1,33 @@
+info:
+  name: Update Owner
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: http://localhost:3001/api/owners/{{ownerId}}
+  params:
+    - name: ""
+      value: ""
+      type: query
+    - name: ownerId
+      value: a3f21e08-fcde-4e44-a7ba-99e5fa007dc5
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Updated Name"
+      }
+  auth: inherit
+
+runtime:
+  variables:
+    - name: ownerId
+      value: a3f21e08-fcde-4e44-a7ba-99e5fa007dc5
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

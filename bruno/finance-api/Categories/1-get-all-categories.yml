@@ -1,0 +1,9 @@
+info:
+  name: Get All Categories
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:3001/api/categories
+  auth: inherit
